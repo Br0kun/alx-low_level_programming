@@ -2,12 +2,12 @@
 #define DOG_H
 
 /**
- * struct dog - a structure representing a dog
- * @name: The name of the dog
- * @age: The age of the dog
- * @owner: The owner's name
+ * struct dog - a structur dog
+ * @name: dog's name
+ * @age: dog's age
+ * @owner: owner's name
  *
- * Description: This structure defines the basic information about a dog
+ * Description: structure of basic information about dog
  */
 struct dog
 {
