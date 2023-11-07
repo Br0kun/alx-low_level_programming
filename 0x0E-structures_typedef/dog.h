@@ -7,7 +7,7 @@
  * @age: dog's age
  * @owner: owner's name
  *
- * Description:just a lone dog struct in a big kitty world
+ * This structure defines the basic information about a dog,
  */
 struct dog
 {
