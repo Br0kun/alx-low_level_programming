@@ -1,21 +1,24 @@
 #include "function_pointers.h"
-/**
-  * int_index - searches for integer
-  * @array: array
-  * @size: how many elem to print
-  * @cmp: the compare function
-  * Return: the integer index
-*/
-int int_index(int *array, int size, int (*cmp)(int))
-
-{
-	int i = 0;
-	if (array && size && cmp)
-		while (i<size)
+#include <stdio.h>
+	/**
+	 * 	 * array_iterator - prints each array elem on a newl
+	 * 	 	 * @array: array
+	 * 	 	 	 * @size: how many elem to print
+	 * 	 	 	 	 * @action: pointer to print in regular or hex
+	 * 	 	 	 	 	 * Return: void
+	 * 	 	 	 	 	 	 */
+	void array_iterator(int *array, size_t size, void (*action)(int))
 		{
-			if (cmp(array[i]))
-				return (i);
-			i++;
-		}
-	return(-1);
-}
+					unsigned int i;
+
+
+							if (array == NULL || action == NULL)
+											return;
+
+
+									for (i = 0; i < size; i++)
+												{
+																action(array[i]);
+																		}
+										}
+
